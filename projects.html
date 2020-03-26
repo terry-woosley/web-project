@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Projects</title>
 </head>
 <body>
     <nav>
@@ -11,6 +12,74 @@
         <a href="projects.html">Project Examples</a>
         <a href="personal-info.html">Personal Information</a>
     </nav>
+    <header>
+        <h1>Project Examples</h1>
+    </header>
+    <main>
+        <div class="row">
+
+            <!-- dice roller widget -->
+            <div id="dice-roller">
+              <h3>Dice Roller</h3>
+              <br>
+              <form class="web-app">
+                <fieldset>
+                  <label for="numOfFaces">How many faces should each die have?</label>
+                  <input class="form-control" id="numOfFaces" type="number" placeholder="Enter number of faces">
+                </fieldset>
     
+                <fieldset>
+                  <label for="numOfDice">How many dice would you like to roll?</label>
+                  <input class="form-control" id="numOfDice" type="number" placeholder="Enter number of dice">
+                </fieldset>
+    
+                <label>Results of each roll: <span id="resultString"></span></label>
+                <br>
+                <label>Results of all rolls added: <span id="resultsAdded"></span></label>
+              </form>
+    
+              <button type="button" id="rollButton">Roll</button>
+            </div>
+    
+            <!-- get planet widget -->
+            <div id="get-planet">
+              <h3>Star Wars Planet Info</h3>
+              <br>
+              <p>Planet Name: <p id="planetName"></p></p>
+              <br>
+              <p>Planet Climate: <p id="planetClimate"></p></p>
+              <br>
+              <button id="getPlanetButton">Get Random Planet</button>
+            </div>
+
+            <!-- average calculator widget -->
+            <div id="avg-calc">
+                <h3>Average Calculator</h3>
+                <input id="first" type="number" class="form-control">
+                <label for="first">First Number: </label>
+                <br>
+                <input id="second" type="number" class="form-control">
+                <label for="second">Second Number: </label>
+                <br>
+                <input id="third" type="number" class="form-control">
+                <label for="third">Third Number: </label>
+                <br>
+                <label>Average: <span id="average">0</span></label>
+                <br>
+                <button id="calculate-button" class="btn">Calculate</button>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        This site was created as part of the Web Development I course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course.  It is not intended for public use.
+        <br>
+        @ Terry Woosley 2020
+    </footer>
+
+    <script src="calculator.js"></script>
+    <script src="dice-roller.js"></script>
+    <script src="get-planet.js"></script>
+
 </body>
 </html>

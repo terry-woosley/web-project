@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Resume</title>
 </head>
 <body>
     <nav>
@@ -14,30 +15,76 @@
     <header>
         <h1>Terry J. Woosley</h1>
     </header>
-    <main>
-        <h2>Education</h2>
-        <ul>
-            <li>Belton High School - Diploma - Graduated May 2015</li>
-            <li>Northwest Missouri State University - Currently Enrolled - Expected Graduation Fall 2021</li>
-        </ul>
-        <h2>Work Related Experience</h2>
-        <ul>
-            <li>Customer Service Position 1</li>
-                <ul>
-                    <li>Experience with customers</li>
-                    <li>Money handling up to $500</li>
-                    <li>Leading small team</li>
-                </ul>
-            <li>Customer Service Position 2</li>
-                <ul>
-                    <li>Experience with customers</li>
-                    <li>Large group work experience</li>
-                    <li>Corporate policies and procedures</li>
-                </ul>
-        </ul>
-    </main>
+    <div class="row">
+      <main>
+        <div class="column">
+            <h2>Education</h2>
+            <ul>
+                <li>Belton High School - Diploma - Graduated May 2015</li>
+                <li>Northwest Missouri State University - Currently Enrolled - Expected Graduation Fall 2021</li>
+            </ul>
+            <h2>Work Experiences</h2>
+            <ul>
+                <li>Martin City Paintball - Referee/Tech</li>
+                  <ul>
+                    <li>Small business enviroment including direct relations with business owners</li>
+                    <li>Rigorous handling and management of safety guidelines and procedures</li>
+                    <li>Customer service and management of small to medium groups of customers</li>
+                    <li>Detail oriented diagnostics on small and complex machines</li>
+                  </ul>
+                <li>Pizza Hut - Cook</li>
+                    <ul>
+                        <li>Experience with customer service while in a fast paced enviroment</li>
+                        <li>Handling of transaction up to $500</li>
+                        <li>Small team work enviroment while having opportunities to lead the small team</li>
+                    </ul>
+                <li>Walmart Inc. - Retail Associate</li>
+                    <ul>
+                        <li>Experience with customer service at a large, well known retail establishment</li>
+                        <li>Large team work experience. 8 - 15 person team.</li>
+                        <li>Ability to follow corporate policies and procedures through a long chain of command</li>
+                    </ul>
+            </ul>
+          </div>
+      </main>
+      <div class="column" id="compTable">
+        <h2>Competencies</h2>
+        <table>
+            <tr>
+                <th>Languages</th>
+                <th>Confidence</th>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>C#</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Low</td>
+              </tr>
+        </table>
+      </div>
+    </div>
     <footer>
-
+      This site was created as part of the Web Development I course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course.  It is not intended for public use.
+      <br>
+      @ Terry Woosley 2020
     </footer>
 </body>
 </html>

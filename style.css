@@ -1,0 +1,93 @@
+nav {
+    padding: 1em;
+    background-color: #000000;
+    height: auto;
+    width: auto;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    padding: 1em;
+}
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: slategray;
+}
+nav a:hover {
+    color: whitesmoke;
+}
+header {
+    background-color: #00cccc;
+    flex: 80%;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    text-align: center;
+}
+body {
+    background-color: #444444;
+}
+main {
+    background-color: cyan;
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex: 75%;
+}
+footer {
+    background-color: #00cccc;
+    flex: 80%;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td {
+    padding: .5em;
+    border-bottom: 1px solid black;
+}
+#compTable {
+    margin-top: 1em;
+    margin-right: 1em;
+    background-color: cyan;
+    flex: auto;
+    padding: 1em;
+}
+#dice-roller{
+    border: 2px solid black;
+    background-color: lightgreen;
+    margin: 1em;
+    padding: 1em;
+}
+#get-planet{
+    border: 2px solid black;
+    background-color: limegreen;
+    margin: 1em;
+    padding: 1em;
+}
+#avg-calc {
+    border: 2px solid black;
+    background-color: darkgreen;
+    margin: 1em;
+    padding: 1em;
+}
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+}
